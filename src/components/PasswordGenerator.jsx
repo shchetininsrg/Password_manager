@@ -14,6 +14,7 @@ const PasswordGenerator = ({
   setUseSymbols,
   setCustomCharset,
   onClickGenerate,
+  setUseCaseOption,
 }) => {
   return (
     <div className='p-5 bg-gray-100 flex flex-col items-center'>

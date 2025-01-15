@@ -123,6 +123,7 @@ function App() {
         setUseNumbers={setUseNumbers}
         setUseSymbols={setUseSymbols}
         setCustomCharset={setCustomCharset}
+        setUseCaseOption={setUseCaseOption}
         useLetters={useLetters}
         useNumbers={useNumbers}
         useSymbols={useSymbols}
