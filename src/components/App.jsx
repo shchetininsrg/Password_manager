@@ -63,13 +63,12 @@ function App() {
   const handleModalOpen = () => setModalOpen(true);
   const handleModalClose = () => setModalOpen(false);
 
-  const handleSave = async (e) => {
+  const handleSave = async () => {
     const success = await simulateRequest();
     if (!success) {
       alert('Не повезло, попробуй еще раз');
       return;
     } else {
-      e.preventDefault();
       const updatedServices = [...services, newService];
       setServices(updatedServices);
       localStorage.setItem('services', JSON.stringify(updatedServices));
