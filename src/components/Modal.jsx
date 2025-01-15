@@ -7,6 +7,7 @@ const Modal = ({ isOpen, onClose, onSave, newService, setNewService }) => {
     <div className='fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center'>
       <div className='bg-white p-6 rounded shadow-lg w-1/3'>
         <h2 className='text-xl font-bold mb-4'>Добавить пароль</h2>
+        <form action="" onSubmit={onSave}>
         <div className='mb-4'>
           <input
             type='text'
@@ -35,7 +36,6 @@ const Modal = ({ isOpen, onClose, onSave, newService, setNewService }) => {
 
         <div className='flex gap-2'>
           <button
-            onClick={onSave}
             className='bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600'
           >
             Сохранить
@@ -47,6 +47,9 @@ const Modal = ({ isOpen, onClose, onSave, newService, setNewService }) => {
             Закрыть
           </button>
         </div>
+
+        </form>
+        
       </div>
     </div>
   );
